@@ -1,0 +1,71 @@
+
+Case Study : Browse/ Front facing app
+
+To build myRetail application , I have used below development environment
+
+Eclipse Spring
+JDK 1.6
+Apache Tomcat 7
+Maven
+Database : PostGressSQL 9.2.1003
+Spring and Spring MVC 3.2.2
+Jackson 2.2.3
+Hibernate 3.6.10
+Junit 4.7
+Spring Test 
+Mockito 1.9.5
+
+Restful web service to test End Points
+
+created  below rest web services end points.
+
+1	GET     /rest/product/getByName/{name}	  			To get the list of all products based on product name.
+2	GET 	/rest/product/getByCategory/{category}		To get the list of all products based on product category.
+3	GET 	/rest/product/getByGenericKey/{genericKey}	To get the list of all products based on product genericKey.
+4	GET 	/rest/product/get/{id}						To get the product info based on product Id.
+5	POST 	/rest/product/create						To create the Employee object and store it
+6	PUT 	/rest/product/{id}		              		To delete the Employee object from the data storage based on the id
+7   DELETE  /rest/product/delete/{id}					To delete the Employee object from the data storage based on the id
+
+Project Directory : 
+
+App : MyReatil
+
+root  : src/main/java
+
+Controller : com.myretail.controller 
+ProductController. java 
+ProductController which will actually be called from spring framework’s dispatcher servlet to process actual application logic and publish all the web service end points.
+
+Services : com.myRetail.service
+ Interface : ProductManager.java 
+ Concrete class : ProductManagerImpl.java
+  
+ Entity : com.myRetail.entity
+ Product.java
+ ProductPrice.java
+ 
+ DAO : com.myretail.dao
+ AbstractJapDAO.java
+ ProductDAO.java
+ ProductPriceDAO.Java
+ ProductDAOImpl.java
+ ProductPriceDAOImpl.java
+ 
+ Test : 
+ 
+ ProductDAOTest.java
+ ProductPrioeDAOTest.java
+ 
+ Resouces :
+ hibernate.cfg.xml
+ myretail-servlet.xml
+ jdbc.properties
+ 
+ 
+ 
+
+
+
+
+
